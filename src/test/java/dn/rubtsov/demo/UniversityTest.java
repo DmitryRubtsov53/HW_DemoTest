@@ -1,5 +1,7 @@
 package dn.rubtsov.demo;
 
+import dn.rubtsov.demo.model.Student;
+import dn.rubtsov.demo.service.University;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -39,8 +41,8 @@ public class UniversityTest {
         assertEquals(expected, actual);
     }
     @Test
-    public void getAllStudentsNtoNull() {
-        University university = new University();
+    public void getAllStudentsNotNull() {
+        //University university = new University();
         List<Student> expected = university.getAllStudents();
 
         assertNotNull(expected);

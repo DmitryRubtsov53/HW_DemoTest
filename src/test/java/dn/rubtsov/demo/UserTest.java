@@ -24,15 +24,15 @@ public class UserTest {
     @Test
     @DisplayName("Тест создания объекта User с передачей в него 2 параметров.")
     public void isCreatUser2P() { // параметры передаются ч/з setUp().
-        assertEquals(expectedLogin, user.getLogin());
-        assertEquals(expectedEmail, user.getEmail());
+        assertEquals(expectedLogin, user.getLogin(),"Логин не установился.");
+        assertEquals(expectedEmail, user.getEmail(), "Email не установился.");
     }
 
     @Test
     @DisplayName("Тест создания объекта User без передачи в него параметров.")
     public void isCreatUser0P() {
-        assertEquals("123456", user.getLogin());
-        assertEquals("123456@mail.ru", user.getEmail());
+        assertEquals("123456", user.getLogin(),"Логин не установился.");
+        assertEquals("123456@mail.ru", user.getEmail(),"Email не установился.");
     }
 
     @Test
