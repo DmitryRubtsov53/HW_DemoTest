@@ -34,7 +34,7 @@ class CalculatorTest {
         assertThat(calculator.divide(2,2)).isEqualTo(1);
     }
     @Test
-    @DisplayName("Деление на 0")
+    @DisplayName("Деление на 0. Тест проверяет: выбрасывается или нет соответствующее исключение.")
     void divisionByZero() {
         assertThatThrownBy(()->calculator.divide(2,0)).isInstanceOf(DivisionByZeroException.class);
     }
