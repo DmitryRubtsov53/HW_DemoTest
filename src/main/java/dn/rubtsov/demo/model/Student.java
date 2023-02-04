@@ -1,4 +1,4 @@
-package dn.rubtsov.demo;
+package dn.rubtsov.demo.model;
 
 public class Student {
     private int id;
